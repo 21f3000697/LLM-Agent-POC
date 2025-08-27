@@ -1,0 +1,7 @@
+llm-agent-poc/
+│
+├── index.html         # Main frontend: UI + JS agent logic
+├── llm-api.js         # Backend: LLM & tool logic (calls real Google API)
+├── server.js          # Node.js Express server for local demo
+├── package.json       # Node.js dependencies
+└── README.md          # How to run & extend
