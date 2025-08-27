@@ -2,8 +2,8 @@
 
 const fetch = require('node-fetch'); // npm install node-fetch@2
 
-const GOOGLE_API_KEY = "AIzaSyCNbd3Q6TkLHyiycFO6uAlq5tg6vKQNJrQ";     // <--- Put your API key here
-const GOOGLE_CX = "211a8151828cb4ec5"; // <--- Put your CSE cx here
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;     // <--- Put your API key here
+const GOOGLE_CX = process.env.GOOGLE_CX; // <--- Put your CSE cx here
 
 async function runTool(tc) {
   if (tc.name === "search") {
